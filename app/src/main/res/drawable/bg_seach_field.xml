@@ -3,4 +3,4 @@
     <solid android:color="@android:color/transparent"/>
     <corners android:radius="@dimen/mp_32"/>
     <stroke android:color="@color/grey" android:width="2dp"/>
-</selector>
+</shape>
