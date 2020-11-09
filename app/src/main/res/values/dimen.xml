@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mp_8">8dp</dimen>
+    <dimen name="mp_12">12dp</dimen>
+    <dimen name="mp_16">16dp</dimen>
+    <dimen name="mp_20">20dp</dimen>
+    <dimen name="mp_24">24dp</dimen>
+    <dimen name="mp_28">28dp</dimen>
+    <dimen name="mp_32">32dp</dimen>
+    <dimen name="mp_36">36dp</dimen>
+    <dimen name="mp_40">40dp</dimen>
+    <dimen name="mp_44">44dp</dimen>
+    <dimen name="mp_48">48dp</dimen>
+    <dimen name="mp_52">52dp</dimen>
+</resources>

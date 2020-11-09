@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">EasyCooking</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="cooking_is_easy">Cooking is easy</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up_now">Sign Up Now</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="reenter_password">Reenter password</string>
+    <string name="login_now">Login now</string>
+    <string name="already_have_account">Already have account</string>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="search">Search</string>
+    <string name="user">User</string>
+    <string name="recommend">Recommend</string>
+    <string name="what_to_eat">What to eat?</string>
+</resources>
