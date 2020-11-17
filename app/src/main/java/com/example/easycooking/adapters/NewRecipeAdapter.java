@@ -11,19 +11,18 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.easycooking.models.Recipe;
 import com.example.easycooking.R;
-
+import com.example.easycooking.models.Recipe;
 
 import java.util.ArrayList;
 
-public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.HolderFood> {
+public class NewRecipeAdapter extends RecyclerView.Adapter<NewRecipeAdapter.HolderFood> {
 
     private LayoutInflater layoutInflater;
     private ArrayList<Recipe> data;
     private OnClickFoodListener listener;
 
-    public FoodAdapter(LayoutInflater layoutInflater) {
+    public NewRecipeAdapter(LayoutInflater layoutInflater) {
         this.layoutInflater = layoutInflater;
     }
 
@@ -39,7 +38,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.HolderFood> {
     @NonNull
     @Override
     public HolderFood onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = layoutInflater.inflate(R.layout.item_recommend, parent, false);
+        View view = layoutInflater.inflate(R.layout.item_recipe, parent, false);
         return new HolderFood(view);
     }
 
@@ -72,18 +71,20 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.HolderFood> {
 
     public class HolderFood extends RecyclerView.ViewHolder {
         private ImageView imageView;
-        private TextView textView, rating;
+        private TextView name, rate, duration;
 
         public HolderFood(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.recommendImg);
-            textView = itemView.findViewById(R.id.tvRecommendName);
-            rating = itemView.findViewById(R.id.tvRecommendRating);
+            imageView = itemView.findViewById(R.id.recipeImage);
+            name = itemView.findViewById(R.id.recipeName);
+            rate = itemView.findViewById(R.id.recipeRating);
+            duration = itemView.findViewById(R.id.recipeDuration);
         }
 
         private void bindView(Recipe recipe) {
-            textView.setText(recipe.getFoodName());
-            rating.setText(recipe.getFoodRating() + "");
+            name.setText(recipe.getFoodName());
+            rate.setText(recipe.getFoodRating() + "");
+            duration.setText(recipe.getFoodDuration() + " min");
             Glide.with(imageView).load(recipe.getFoodImageUrl()).into(imageView);
         }
     }

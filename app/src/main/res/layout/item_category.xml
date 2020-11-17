@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:orientation="vertical"
+    android:layout_marginEnd="@dimen/mp_16"
+    app:cardCornerRadius="@dimen/mp_16"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_marginBottom="@dimen/mp_16"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/layoutCate"
+        android:background="@color/greenDark"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgCate"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+        <TextView
+            android:id="@+id/tvNameCate"
+            android:text="Pizza"
+            android:textColor="@color/black"
+            android:gravity="center"
+            style="@style/MyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

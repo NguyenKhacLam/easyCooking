@@ -1,35 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/textView2"
-        style="@style/MyText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/mp_52"
-        android:text="@string/what_to_eat"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/edSearch"
-        android:layout_marginHorizontal="@dimen/mp_16"
-        app:layout_constraintTop_toBottomOf="@id/textView2"
-        android:layout_marginTop="@dimen/mp_24"
-        android:paddingHorizontal="@dimen/mp_16"
-        android:hint="@string/search"
-        android:drawablePadding="@dimen/mp_16"
-        android:paddingVertical="@dimen/mp_16"
-        android:drawableStart="@drawable/ic_search"
-        android:drawableTint="@color/greenPrimary"
-        android:background="@drawable/bg_seach_field"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/MyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mp_52"
+            android:text="@string/what_to_eat"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edSearch"
+            android:layout_marginHorizontal="@dimen/mp_16"
+            app:layout_constraintTop_toBottomOf="@id/textView2"
+            android:layout_marginTop="@dimen/mp_24"
+            android:paddingHorizontal="@dimen/mp_16"
+            android:hint="@string/search"
+            android:drawablePadding="@dimen/mp_16"
+            android:paddingVertical="@dimen/mp_16"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableTint="@color/greenPrimary"
+            android:background="@drawable/bg_seach_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcSearch"
+            android:padding="@dimen/mp_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mp_32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edSearch" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

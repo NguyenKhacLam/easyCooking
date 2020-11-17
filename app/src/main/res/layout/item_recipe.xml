@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/mp_16"
+    android:layout_marginBottom="@dimen/mp_16"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImg"
+            android:layout_margin="@dimen/mp_16"
+            app:cardCornerRadius="@dimen/mp_16"
+            android:layout_width="75dp"
+            android:layout_height="75dp">
+            <ImageView
+                android:id="@+id/recipeImage"
+                android:src="@drawable/food"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/cardImg"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:maxWidth="250dp"
+                android:id="@+id/recipeName"
+                style="@style/MyText"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Cơm rang dưa bò"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/info"
+                android:layout_marginTop="@dimen/mp_8"
+                android:gravity="center_vertical"
+                android:layout_below="@id/recipeName"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/ic_baseline_star_24"
+                    android:layout_width="@dimen/mp_28"
+                    android:layout_height="@dimen/mp_28"
+                    android:layout_marginEnd="@dimen/mp_8"
+                    app:tint="@color/yellow" />
+                <TextView
+                    android:id="@+id/recipeRating"
+                    android:text="4.8"
+                    style="@style/MyText"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="|"
+                    android:layout_marginHorizontal="@dimen/mp_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:src="@drawable/ic_baseline_access_time_24"
+                    android:layout_width="@dimen/mp_28"
+                    android:layout_height="@dimen/mp_28"
+                    android:layout_marginEnd="@dimen/mp_8" />
+
+                <TextView
+                    android:id="@+id/recipeDuration"
+                    android:text="25 min"
+                    android:textSize="14sp"
+                    style="@style/MyText"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/recipeCategory"
+                android:layout_below="@id/info"
+                android:text="Breakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginEnd="@dimen/mp_16"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/btn_love"
+            android:layout_width="@dimen/mp_24"
+            android:layout_height="@dimen/mp_24"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
